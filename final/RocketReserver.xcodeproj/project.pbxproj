@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C8315062C4AC21A00392155 /* DatadogCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8315052C4AC21A00392155 /* DatadogCore */; };
+		3C8315082C4AC21A00392155 /* DatadogRUM in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8315072C4AC21A00392155 /* DatadogRUM */; };
 		66EEA7762A13C4BF00BB8C72 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 66EEA7752A13C4BF00BB8C72 /* Apollo */; };
 		66EEA7782A13C4BF00BB8C72 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 66EEA7772A13C4BF00BB8C72 /* ApolloWebSocket */; };
 		66F96F9B29FAC0D600713B80 /* RocketReserverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96F9A29FAC0D600713B80 /* RocketReserverApp.swift */; };
@@ -63,8 +65,10 @@
 			files = (
 				66F96FD629FADBB700713B80 /* SDWebImageSwiftUI in Frameworks */,
 				66EEA7762A13C4BF00BB8C72 /* Apollo in Frameworks */,
+				3C8315082C4AC21A00392155 /* DatadogRUM in Frameworks */,
 				66EEA7782A13C4BF00BB8C72 /* ApolloWebSocket in Frameworks */,
 				66F96FD129FAD2EC00713B80 /* RocketReserverAPI in Frameworks */,
+				3C8315062C4AC21A00392155 /* DatadogCore in Frameworks */,
 				66F96FDA29FADCC800713B80 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +176,8 @@
 				66F96FD929FADCC800713B80 /* KeychainSwift */,
 				66EEA7752A13C4BF00BB8C72 /* Apollo */,
 				66EEA7772A13C4BF00BB8C72 /* ApolloWebSocket */,
+				3C8315052C4AC21A00392155 /* DatadogCore */,
+				3C8315072C4AC21A00392155 /* DatadogRUM */,
 			);
 			productName = RocketReserver;
 			productReference = 66F96F9729FAC0D600713B80 /* RocketReserver.app */;
@@ -205,6 +211,7 @@
 				66F96FD429FADBB700713B80 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				66F96FD829FADCC800713B80 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				66EEA7742A13C4BF00BB8C72 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				3C8315042C4AC1FF00392155 /* XCRemoteSwiftPackageReference "dd-sdk-ios" */,
 			);
 			productRefGroup = 66F96F9829FAC0D600713B80 /* Products */;
 			projectDirPath = "";
@@ -453,6 +460,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3C8315042C4AC1FF00392155 /* XCRemoteSwiftPackageReference "dd-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Datadog/dd-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.14.1;
+			};
+		};
 		66EEA7742A13C4BF00BB8C72 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
@@ -480,6 +495,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3C8315052C4AC21A00392155 /* DatadogCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8315042C4AC1FF00392155 /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCore;
+		};
+		3C8315072C4AC21A00392155 /* DatadogRUM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8315042C4AC1FF00392155 /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogRUM;
+		};
 		66EEA7752A13C4BF00BB8C72 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 66EEA7742A13C4BF00BB8C72 /* XCRemoteSwiftPackageReference "apollo-ios" */;

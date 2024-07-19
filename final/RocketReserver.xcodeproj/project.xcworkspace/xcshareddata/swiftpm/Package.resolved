@@ -10,12 +10,39 @@
       }
     },
     {
+      "identity" : "dd-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Datadog/dd-sdk-ios.git",
+      "state" : {
+        "revision" : "65854b3fe0a2aff3dec470e3f74835d1abffe2c7",
+        "version" : "2.14.1"
+      }
+    },
+    {
       "identity" : "keychain-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/evgenyneu/keychain-swift",
       "state" : {
         "revision" : "d9b76fba09c2eb5c0bb9312092d309c833996cd2",
         "version" : "18.0.0"
+      }
+    },
+    {
+      "identity" : "opentelemetry-swift-packages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DataDog/opentelemetry-swift-packages.git",
+      "state" : {
+        "revision" : "adcfc3d7fc6ad411bb576cfa4512c2d3f8b2dbc7",
+        "version" : "1.6.0"
+      }
+    },
+    {
+      "identity" : "plcrashreporter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/microsoft/plcrashreporter.git",
+      "state" : {
+        "revision" : "6752f71de206f6a53fa6a758c3660fd9a7fe7527",
+        "version" : "1.11.2"
       }
     },
     {
